@@ -11,7 +11,7 @@ const Home = () => {
 
 
 
-        <div className="md:h-[100vh] bg-[url(https://i.ibb.co/X3LqdPc/dcdf6d2c62407dffdcdf6d2c62407dffpang-yuhao-kd5cxw-ZOK4-unsplash-min-1.jpg)] bg-cover bg-center bg-no-repeat">
+        <div className="md:h-[100vh] bg-[url(https://i.ibb.co/xjYgNHV/e21f0c78-80d5-49df-9e0f-cf98927bf4b7.jpg)] bg-cover bg-center bg-no-repeat">
 
 <Navbar></Navbar>
 
