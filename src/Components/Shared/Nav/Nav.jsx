@@ -21,7 +21,7 @@ const Nav = () => {
       </div>
       
       <Navbar.Collapse >
-        <Link className="text-lg hover:text-green hover:scale-125 duration-300"
+        <Link className="text-lg hover:text-green transition duration-300 transform hover:-translate-y-1 rounded"
         
           active
           to="/"
@@ -30,13 +30,13 @@ const Nav = () => {
             Home
     
         </Link>
-        <Link className="text-lg hover:text-green hover:scale-125 duration-300" to="/colleges">
+        <Link className="text-lg hover:text-green transition duration-300 transform hover:-translate-y-1 rounded" to="/colleges">
           Colleges
         </Link>
-        <Link className="text-lg hover:text-green hover:scale-125 duration-300" to="/admission">
+        <Link className="text-lg hover:text-green transition duration-300 transform hover:-translate-y-1 rounded" to="/admission">
           Admission
         </Link>
-        <Link className="text-lg hover:text-green hover:scale-125 duration-300" to="/my-college">
+        <Link className="text-lg hover:text-green transition duration-300 transform hover:-translate-y-1 rounded" to="/my-college">
          My College
         </Link>
         
