@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { useForm } from "react-hook-form";
 
-
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -46,21 +45,21 @@ const Login = () => {
           errorCode === "auth/user-not-found" ||
           errorCode === "auth/wrong-password"
         ) {
-            Swal.fire({
-                position: "top-end",
-                icon: "eroor",
-                title: "Invalid email or password",
-                showConfirmButton: false,
-                timer: 1500,
-              });
+          Swal.fire({
+            position: "top-end",
+            icon: "eroor",
+            title: "Invalid email or password",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         } else {
-            Swal.fire({
-                position: "top-end",
-                icon: "eroor",
-                title: {errorMessage},
-                showConfirmButton: false,
-                timer: 1500,
-              });
+          Swal.fire({
+            position: "top-end",
+            icon: "eroor",
+            title: { errorMessage },
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       });
   };
@@ -109,7 +108,7 @@ const Login = () => {
         <title>Aperture Adventure | Login</title>
       </Helmet>
       <div className="w-full p-6 h-3/4 bg-white rounded-md shadow-2xl lg:max-w-xl">
-        <h1 className="text-3xl font-semibold text-center text-cyan-700 uppercase">
+        <h1 className="text-3xl font-semibold text-center text-blue uppercase">
           Sign in
         </h1>
         <form onSubmit={handleSubmit(handleForm)} className="mt-6">
@@ -125,7 +124,7 @@ const Login = () => {
               type="email"
               id="email"
               {...register("email", { required: true })}
-              className={`block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40 ${
+              className={`block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40 ${
                 errors.email ? "border-red-500" : ""
               }`}
             />
@@ -143,7 +142,7 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               id="password"
               {...register("password", { required: true })}
-              className={`block w-full px-4 py-2 pr-10 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40 ${
+              className={`block w-full px-4 py-2 pr-10 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40 ${
                 errors.password ? "border-red-500" : ""
               }`}
             />
@@ -163,11 +162,11 @@ const Login = () => {
             )}
           </div>
 
-          <a href="#" className="text-xs text-cyan-600 hover:underline">
+          <a href="#" className="text-xs text-green hover:underline">
             Forget Password?
           </a>
           <div className="mt-6">
-            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-cyan-700 rounded-md hover:bg-cyan-600 focus:outline-none focus:bg-cyan-600">
+            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue rounded-md hover:bg-green focus:outline-none focus:bg-green">
               Login
             </button>
           </div>
@@ -179,7 +178,7 @@ const Login = () => {
           <button
             onClick={handleGoogleSignIn}
             type="button"
-            className="flex items-center justify-center w-full p-2 border border-cyan-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600"
+            className="flex items-center justify-center w-full p-2 border border-green rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-green"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +195,7 @@ const Login = () => {
           Don't have an account?{" "}
           <Link
             to="/register"
-            className="font-medium text-lg text-cyan-600 hover:underline"
+            className="font-medium text-lg text-green hover:underline"
           >
             Sign up
           </Link>

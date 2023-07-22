@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../provider/AuthProvider";
+
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Register = () => {
   const { createUser, signInGoogle, profileUpdate, setLoading } =
@@ -105,7 +106,7 @@ const Register = () => {
       </Helmet>
       <div className="relative flex flex-col justify-center my-4 overflow-hidden">
         <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
-          <h1 className="text-3xl font-semibold text-center text-cyan-700 uppercase">
+          <h1 className="text-3xl font-semibold text-center text-blue uppercase">
             Sign Up
           </h1>
           <form onSubmit={handleSubmit(handleReg)} className="mt-6">
@@ -120,7 +121,7 @@ const Register = () => {
                 type="text"
                 id="name"
                 {...register("name", { required: true })}
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             {errors.name && <span className="error">Name is required</span>}
@@ -135,7 +136,7 @@ const Register = () => {
                 type="email"
                 id="email"
                 {...register("email", { required: true })}
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             {errors.email && <span className="error">Email is required</span>}
@@ -150,7 +151,7 @@ const Register = () => {
                 type="text"
                 id="url"
                 {...register("url")}
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             <div className="mb-2">
@@ -176,7 +177,7 @@ const Register = () => {
                       "Password must contain an uppercase letter, a lowercase letter, a number, and a special character",
                   },
                 })}
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             {errors.password && (
@@ -196,7 +197,7 @@ const Register = () => {
                   validate: (value) =>
                     value === passwordValue || "Passwords do not match",
                 })}
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-4 py-2 mt-2 text-blue bg-white border rounded-md focus:border-blue focus:ring-green focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             {errors.confirmPassword && (
@@ -204,14 +205,14 @@ const Register = () => {
             )}
 
             <div>
-              <a href="#" className="text-xs text-cyan-600 hover:underline">
+              <a href="#" className="text-xs text-green hover:underline">
                 Forget Password?
               </a>
             </div>
             <div className="mt-6">
               <button
                 type="submit"
-                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-cyan-700 rounded-md hover:bg-cyan-600 focus:outline-none focus:bg-cyan-600"
+                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue rounded-md hover:bg-green focus:outline-none focus:bg-green"
               >
                 Register
               </button>
@@ -224,7 +225,7 @@ const Register = () => {
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              className="flex items-center justify-center w-full p-2 border border-cyan-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-cyan-600"
+              className="flex items-center justify-center w-full p-2 border border-green rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-green"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +242,7 @@ const Register = () => {
             Already have an account?{" "}
             <Link
               to="/login"
-              className="font-medium text-lg text-cyan-600 hover:underline"
+              className="font-medium text-lg text-green hover:underline"
             >
               Sign In
             </Link>
