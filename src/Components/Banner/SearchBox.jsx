@@ -3,7 +3,7 @@
 
 const SearchBox = () => {
     return (
-        <div className="w-1/2 pb-10 mx-auto z-40">
+        <div className="w-1/2 py-10 mx-auto z-40">
            <form>
   <label
     htmlFor="default-search"

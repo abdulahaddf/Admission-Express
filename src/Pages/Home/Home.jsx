@@ -1,5 +1,6 @@
 import Banner from "../../Components/Banner/Banner";
 import CollegeSection from "../../Components/Banner/CollegeSection/CollegeSection";
+import PhotoGallery from "../../Components/PhotoGallery/PhotoGallery";
 
 
 import Navbar from "../../Components/Shared/Nav/Navbar";
@@ -18,7 +19,7 @@ const Home = () => {
 
 </div>
 <CollegeSection></CollegeSection>
-    
+    <PhotoGallery></PhotoGallery>
 
     </div>
   );
