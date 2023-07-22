@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,7 +7,13 @@ export default {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        green : '#28AB1E',
+        blue : '#36A8DF',
+        
+        
+      }},
   },
   plugins: [require('flowbite/plugin')],
 }

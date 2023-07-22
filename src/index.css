@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Poppins', sans-serif;
+
+    }
+   
+  }
+
+  @layer components {
+    
+    .btn{
+        @apply  px-4 py-1 rounded-full border-green hover:border-green  border-2 hover:bg-green hover:scale-105  duration-300 normal-case;
+    }
+    .btn-new{
+        @apply px-6 text-lg py-1 rounded-full border-green hover:border-green  border-2 hover:bg-green hover:scale-105  duration-300 normal-case;
+    }
+    .heading{
+      @apply w-fit mx-auto text-3xl text-center border-b-4 border-green rounded-xl px-5
+    }
+    
+  }

@@ -1,10 +1,11 @@
-import Nav from "../Components/Shared/Nav/Nav";
+import { Outlet } from "react-router-dom";
+
 
 
 const HomeLayout = () => {
     return (
         <div>
-            <Nav></Nav>
+           <Outlet></Outlet>
         </div>
     );
 };
