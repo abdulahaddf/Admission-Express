@@ -11,12 +11,14 @@ import Register from "./Pages/Login/Register";
 import Admission from "./Pages/Admission/Admission";
 import Colleges from "./Pages/Colleges/Colleges";
 import MyCollege from "./Pages/MyCollege/MyCollege";
+import ErrorPage from "./Components/Shared/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

@@ -1,4 +1,5 @@
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ClgCard = ({clg}) => {
     const {
@@ -55,10 +56,10 @@ const ClgCard = ({clg}) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end text-3xl hover:text-green">
+        <Link to="#" className="flex justify-end text-3xl hover:text-green">
 
               <FaArrowAltCircleRight/>
-        </div>
+        </Link>
       </div>
     </div>
         </div>

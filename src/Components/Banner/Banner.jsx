@@ -18,8 +18,8 @@ const Banner = () => {
     className=" bg-gradient-to-r "></div>
 
   <div
-    className=" flex justify-center w-4/5 mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8      ">
-    <div className="max-w-2xl text-black bg-white p-10  rounded-xl bg-opacity-70 ltr:sm:text-left rtl:sm:text-right">
+    className=" flex justify-center items-start w-4/5 mx-auto max-w-screen-xl px-4 sm:px-6 lg:flex lg:h-screen  lg:px-8   z-20   ">
+    <div className="max-w-2xl text-black bg-white bg-opacity-80 p-10  md:rounded-ss-[60px]  ltr:sm:text-left rtl:sm:text-right">
       <h1 className="text-3xl font-extrabold sm:text-5xl">
         Let us help you to find
 
