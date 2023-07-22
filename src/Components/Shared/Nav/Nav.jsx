@@ -7,11 +7,9 @@ const Nav = () => {
       fluid
       rounded
     >
-      <Link to="/">
+      <Link className='flex justify-center items-center' to="/">
        
-        <span className="self-center text-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Admission Express
-        </span>
+       <img className='h-12' src="https://i.ibb.co/CP02H69/express.png" alt="" />
       </Link>
       <div className="flex md:order-2">
         <Link className='btn' to="/login">

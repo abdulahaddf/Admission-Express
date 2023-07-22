@@ -1,28 +1,42 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomeLayout from "./Layout/HomeLayout";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import AuthProvider from "./provider/AuthProvider";
+import { HelmetProvider } from "react-helmet-async";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
-    children:[
+    children: [
       {
         path: "/",
-        element:<Home></Home>
-      }
-    ]
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Login></Login>,
+      },
+    ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <HelmetProvider>
+      <RouterProvider router={router} />
+
+       </HelmetProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
