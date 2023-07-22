@@ -1,0 +1,259 @@
+
+
+[
+    {
+      "name": "Harvard University",
+      "imageLink": "https://i.ibb.co/ws7Yx5v/college-1090-29-15-00-o-HARVARD-UNIVERSITY-BUILDING-facebook.webp",
+      "admissionDates": "September 1 - October 31",
+      "events": "New Student Orientation, Harvard Football Game",
+      "researchHistory": "Pioneering in Medical Research",
+      "sports": "Soccer, Basketball, Swimming",
+      "admissionProcess": "1. Submit Common Application or Coalition Application\n2. Complete required tests (SAT/ACT)\n3. Submit secondary school report and transcripts\n4. Prepare and submit recommendations\n5. Await admission decision\n6. Complete enrollment process",
+      "eventsDetails": {
+        "newStudentOrientation": "Date: September 5, 2023\nTime: 10:00 AM\nVenue: Harvard Yard",
+        "harvardYaleFootballGame": "Date: November 18, 2023\nTime: 12:00 PM\nVenue: Harvard Stadium"
+      },
+      "researchWorks": [
+        {
+          "title": "Advancements in Stem Cell Research",
+          "author": "Dr. Sarah Johnson",
+          "publicationDate": "July 2022"
+        },
+        {
+          "title": "Genome Sequencing and Precision Medicine",
+          "author": "Dr. Michael Smith",
+          "publicationDate": "December 2022"
+        }
+      ],
+      "sportsCategories": [
+        {
+          "category": "Soccer",
+          "coach": "Mr. David Anderson",
+          "trainingSchedule": "Mondays and Wednesdays, 4:00 PM - 6:00 PM"
+        },
+        {
+          "category": "Basketball",
+          "coach": "Ms. Emily Adams",
+          "trainingSchedule": "Tuesdays and Thursdays, 5:00 PM - 7:00 PM"
+        },
+        {
+          "category": "Swimming",
+          "coach": "Mr. Robert Brown",
+          "trainingSchedule": "Fridays, 3:00 PM - 5:00 PM"
+        }
+      ]
+    },
+    {
+      "name": "Stanford University",
+      "imageLink": "https://i.ibb.co/Jx92Vks/shutterstock-4189008910-9b68011a5056a36-9b6802fa-5056-a36a-0bbb53c8e971b411.jpg",
+      "admissionDates": "October 1 - November 30",
+      "events": "Admit Weekend, Big Game",
+      "researchHistory": "Groundbreaking in Computer Science",
+      "sports": "Tennis, Track and Field, Golf",
+      "admissionProcess": "1. Apply through the Common Application or Coalition Application\n2. Complete required tests (SAT/ACT)\n3. Submit high school transcripts and recommendations\n4. Write and submit essays\n5. Wait for admission decision\n6. Complete enrollment process",
+      "eventsDetails": {
+        "admitWeekend": "Date: April 8-10, 2024\nTime: All-day event\nVenue: Stanford Campus",
+        "bigGame": "Date: November 20, 2023\nTime: 1:00 PM\nVenue: Stanford Stadium"
+      },
+      "researchWorks": [
+        {
+          "title": "Artificial Intelligence and Robotics",
+          "author": "Prof. Andrew Lee",
+          "publicationDate": "March 2023"
+        },
+        {
+          "title": "Innovations in Biomedical Engineering",
+          "author": "Dr. Jessica Martinez",
+          "publicationDate": "October 2022"
+        }
+      ],
+      "sportsCategories": [
+        {
+          "category": "Tennis",
+          "coach": "Ms. Maria Rodriguez",
+          "trainingSchedule": "Mondays and Thursdays, 5:00 PM - 7:00 PM"
+        },
+        {
+          "category": "Track and Field",
+          "coach": "Mr. John Wilson",
+          "trainingSchedule": "Tuesdays and Fridays, 4:00 PM - 6:00 PM"
+        },
+        {
+          "category": "Golf",
+          "coach": "Mr. James Smith",
+          "trainingSchedule": "Wednesdays, 3:00 PM - 5:00 PM"
+        }
+      ]
+    },
+    {
+        "name": "Princeton University",
+        "imageLink": "https://i.ibb.co/7r0zYkg/princeton-university-main-building-at-front-gate-geraldine-scull-209cbd93-c4fc-4485-a274-66b4076c71e.jpg",
+        "admissionDates": "September 1 - November 1",
+        "events": "Princeton Preview, Princeton Reunions",
+        "researchHistory": "Leading in Economics and Public Policy",
+        "sports": "Baseball, Field Hockey, Squash",
+        "admissionProcess": "1. Submit the Common Application or Coalition Application\n2. Send standardized test scores (SAT/ACT)\n3. Provide secondary school report and transcripts\n4. Submit two teacher evaluations\n5. Await admission decision\n6. Complete enrollment process",
+        "eventsDetails": {
+          "princetonPreview": "Date: April 15-17, 2024\nTime: All-day event\nVenue: Princeton Campus",
+          "princetonReunions": "Date: May 26-29, 2024\nTime: All-day event\nVenue: Princeton Campus"
+        },
+        "researchWorks": [
+          {
+            "title": "The Economics of Income Inequality",
+            "author": "Dr. Sarah Lee",
+            "publicationDate": "July 2022"
+          },
+          {
+            "title": "Public Policy in the Digital Age",
+            "author": "Prof. Andrew Johnson",
+            "publicationDate": "November 2022"
+          }
+        ],
+        "sportsCategories": [
+          {
+            "category": "Baseball",
+            "coach": "Mr. Robert Brown",
+            "trainingSchedule": "Mondays and Wednesdays, 4:00 PM - 6:00 PM"
+          },
+          {
+            "category": "Field Hockey",
+            "coach": "Ms. Maria Rodriguez",
+            "trainingSchedule": "Tuesdays and Thursdays, 5:00 PM - 7:00 PM"
+          },
+          {
+            "category": "Squash",
+            "coach": "Mr. Michael Smith",
+            "trainingSchedule": "Fridays, 3:00 PM - 5:00 PM"
+          }
+        ]
+      },
+    {
+      "name": "MIT (Massachusetts Institute of Technology)",
+      "imageLink": "https://i.ibb.co/0Js7vmv/15656704711-00457bd2c9-b-1.jpg",
+      "admissionDates": "October 15 - December 15",
+      "events": "MIT CPW, MIT Hacks",
+      "researchHistory": "Revolutionary in Engineering and Technology",
+      "sports": "Swimming, Cross Country, Fencing",
+      "admissionProcess": "1. Complete the MIT application online\n2. Take required tests (SAT/ACT)\n3. Submit secondary school report and transcripts\n4. Submit letters of recommendation\n5. Await admission decision\n6. Complete enrollment process",
+      "eventsDetails": {
+        "mitCPW": "Date: April 22-24, 2024\nTime: All-day event\nVenue: MIT Campus",
+        "mitHacks": "Date: October 31, 2023\nTime: All-day event\nVenue: MIT Student Center"
+      },
+      "researchWorks": [
+        {
+          "title": "Future of Space Exploration",
+          "author": "Dr. David Johnson",
+          "publicationDate": "August 2022"
+        },
+        {
+          "title": "Advancements in Nanotechnology",
+          "author": "Prof. Emily Davis",
+          "publicationDate": "January 2023"
+        }
+      ],
+      "sportsCategories": [
+        {
+          "category": "Swimming",
+          "coach": "Mr. Robert Brown",
+          "trainingSchedule": "Mondays and Wednesdays, 4:00 PM - 6:00 PM"
+        },
+        {
+          "category": "Cross Country",
+          "coach": "Ms. Sarah Adams",
+          "trainingSchedule": "Tuesdays and Thursdays, 5:00 PM - 7:00 PM"
+        },
+        {
+          "category": "Fencing",
+          "coach": "Mr. Michael Smith",
+          "trainingSchedule": "Fridays, 3:00 PM - 5:00 PM"
+        }
+      ]
+    },
+    {
+      "name": "Yale University",
+      "imageLink": "https://i.ibb.co/YRGh7kL/crosscampus2019.webp",
+      "admissionDates": "September 15 - November 15",
+      "events": "Bulldog Days, The Game",
+      "researchHistory": "Prominent in Law and Social Sciences",
+      "sports": "Football, Soccer, Lacrosse",
+      "admissionProcess": "1. Complete the Common Application or Coalition Application\n2. Submit standardized test scores (SAT/ACT)\n3. Provide high school transcripts and teacher evaluations\n4. Write and submit a personal essay\n5. Wait for admission decision\n6. Complete enrollment process",
+      "eventsDetails": {
+        "bulldogDays": "Date: April 12-14, 2024\nTime: All-day event\nVenue: Yale Campus",
+        "theGame": "Date: November 18, 2023\nTime: 12:00 PM\nVenue: Yale Bowl"
+      },
+      "researchWorks": [
+        {
+          "title": "Constitutional Law: A Historical Perspective",
+          "author": "Dr. Jessica Turner",
+          "publicationDate": "October 2021"
+        },
+        {
+          "title": "Sociology of Globalization",
+          "author": "Prof. Michael Johnson",
+          "publicationDate": "May 2023"
+        }
+      ],
+      "sportsCategories": [
+        {
+          "category": "Football",
+          "coach": "Mr. James Wilson",
+          "trainingSchedule": "Mondays and Thursdays, 4:00 PM - 6:00 PM"
+        },
+        {
+          "category": "Soccer",
+          "coach": "Ms. Emily Adams",
+          "trainingSchedule": "Tuesdays and Fridays, 5:00 PM - 7:00 PM"
+        },
+        {
+          "category": "Lacrosse",
+          "coach": "Mr. John Davis",
+          "trainingSchedule": "Wednesdays, 3:00 PM - 5:00 PM"
+        }
+      ]
+    },
+    {
+        "name": "University of California, Berkeley",
+        "imageLink": "https://i.ibb.co/jzDvvps/08-UCLA-Royce.jpg",
+        "admissionDates": "October 1 - November 30",
+        "events": "Cal Day, Homecoming",
+        "researchHistory": "Leading in Computer Science and Engineering",
+        "sports": "Rugby, Volleyball, Rowing",
+        "admissionProcess": "1. Complete the UC application online\n2. Submit standardized test scores (SAT/ACT)\n3. Provide high school transcripts and GPA\n4. Write and submit personal insight essays\n5. Wait for admission decision\n6. Complete enrollment process",
+        "eventsDetails": {
+          "calDay": "Date: April 9, 2024\nTime: All-day event\nVenue: UC Berkeley Campus",
+          "homecoming": "Date: October 15, 2023\nTime: 12:00 PM\nVenue: California Memorial Stadium"
+        },
+        "researchWorks": [
+          {
+            "title": "Advancements in Artificial Intelligence",
+            "author": "Dr. Mark Johnson",
+            "publicationDate": "August 2022"
+          },
+          {
+            "title": "Innovations in Sustainable Energy",
+            "author": "Prof. Emily Davis",
+            "publicationDate": "January 2023"
+          }
+        ],
+        "sportsCategories": [
+          {
+            "category": "Rugby",
+            "coach": "Mr. David Anderson",
+            "trainingSchedule": "Mondays and Thursdays, 4:00 PM - 6:00 PM"
+          },
+          {
+            "category": "Volleyball",
+            "coach": "Ms. Sarah Adams",
+            "trainingSchedule": "Tuesdays and Fridays, 5:00 PM - 7:00 PM"
+          },
+          {
+            "category": "Rowing",
+            "coach": "Mr. Robert Brown",
+            "trainingSchedule": "Wednesdays, 3:00 PM - 5:00 PM"
+          }
+        ]
+      }
+      
+    
+  ]
+  

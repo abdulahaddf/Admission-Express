@@ -1,9 +1,13 @@
 import { Navbar } from "flowbite-react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../provider/AuthProvider";
 const Nav = () => {
+    const {user} = useContext(AuthContext);
   return (
     <div>
-      <Navbar fluid rounded>
+      <Navbar fluid rounded 
+       className="bg-transparent z-40">
         <Link className="flex justify-center items-center" to="/">
           <img
             className="h-12"
@@ -46,6 +50,7 @@ const Nav = () => {
           </Link>
         </Navbar.Collapse>
       </Navbar>
+      
     </div>
   );
 };
