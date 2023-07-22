@@ -10,15 +10,15 @@ const Footer = () => {
       <strong
         className="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
       >
-        Want us to email you with the latest blockbuster news?
+        Want us to email you with the latest Admission updates?
       </strong>
 
       <form className="mt-6">
-        <div className="relative flex max-w-lg">
+        <div className="relative flex gap-2 max-w-lg">
           <label className="sr-only" htmlFor="email"> Email </label>
 
           <input
-            className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-semibold"
+            className="w-full rounded-full border-green border-2 bg-gray-100 p-4 pe-32 text-sm font-semibold"
             id="email"
             type="email"
             placeholder="yourmail@gmail.com"
