@@ -12,6 +12,8 @@ import Admission from "./Pages/Admission/Admission";
 import Colleges from "./Pages/Colleges/Colleges";
 import MyCollege from "./Pages/MyCollege/MyCollege";
 import ErrorPage from "./Components/Shared/ErrorPage/ErrorPage";
+import Apply from "./Pages/Admission/Apply";
+import SingleCollege from "./Pages/Colleges/SingleCollege";
 
 
 const router = createBrowserRouter([
@@ -37,12 +39,20 @@ const router = createBrowserRouter([
         element: <Colleges></Colleges>,
       },
       {
+        path: "/details",
+        element: <SingleCollege></SingleCollege>,
+      },
+      {
         path: "/admission",
         element: <Admission></Admission>,
       },
       {
         path: "/my-college",
         element: <MyCollege></MyCollege>,
+      },
+      {
+        path: "/apply",
+        element: <Apply></Apply>,
       },
     ],
   },

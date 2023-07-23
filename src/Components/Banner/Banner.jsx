@@ -7,11 +7,7 @@ const Banner = () => {
     return (
         <div className="z-10 max-h-[92vh] bg-black bg-opacity-40 ">
           <SearchBox></SearchBox>
-            {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
+            
 
 <section>
   <div
@@ -19,7 +15,7 @@ const Banner = () => {
 
   <div
     className=" flex justify-center items-start w-4/5 mx-auto max-w-screen-xl px-4 sm:px-6 lg:flex lg:h-screen  lg:px-8   z-20   ">
-    <div className="max-w-2xl text-black bg-white bg-opacity-80 p-10  md:rounded-ss-[60px]  ltr:sm:text-left rtl:sm:text-right">
+    <div className="max-w-2xl text-black bg-white bg-opacity-80 p-10  md:rounded-ss-[60px] border-r-green border-r-8  ltr:sm:text-left rtl:sm:text-right">
       <h1 className="text-3xl font-extrabold sm:text-5xl">
         Let us help you to find
 

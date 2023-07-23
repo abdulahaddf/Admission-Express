@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -9,10 +10,7 @@ const ClgCard = ({clg}) => {
         events,
         researchHistory,
         sports,
-        admissionProcess,
-        eventsDetails,
-        researchWorks,
-        sportsCategories
+     
       } = clg;
     return (
         <div className="">
@@ -56,7 +54,7 @@ const ClgCard = ({clg}) => {
             </div>
           </div>
         </div>
-        <Link to="#" className="flex justify-end text-3xl hover:text-green">
+        <Link to="/details"  state= { clg } className="flex justify-end text-3xl hover:text-green">
 
               <FaArrowAltCircleRight/>
         </Link>
