@@ -6,13 +6,13 @@ import { Helmet } from "react-helmet";
 const Admission = () => {
   const [Colleges, setCollege] = useState([]);
   useEffect(() => {
-    fetch("data.json").then((res) =>
-      res.json().then((data) => setCollege(data))
-    );
+    fetch(
+      "https://express-server-production-3274.up.railway.app/colleges"
+    ).then((res) => res.json().then((data) => setCollege(data)));
   }, []);
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Express Admission | Admission</title>
       </Helmet>
       <Navbar></Navbar>
@@ -41,11 +41,17 @@ const Admission = () => {
                       alt="college"
                     />
                   </td>
-                  <td className="text-xl hover:underline"><Link to= "/apply"  state= { clg } >{clg.name}</Link></td>
+                  <td className="text-xl hover:underline">
+                    <Link to="/apply" state={clg}>
+                      {clg.name}
+                    </Link>
+                  </td>
                   <td>{clg.admissionDates}</td>
                   <td>
-                    {" "} 
-                    <Link to= "/apply"  state= { clg } className="btn-custom">Apply</Link>
+                    {" "}
+                    <Link to="/apply" state={clg} className="btn-custom">
+                      Apply
+                    </Link>
                   </td>
                 </tr>
               ))}
