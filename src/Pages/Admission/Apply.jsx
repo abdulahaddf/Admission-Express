@@ -50,7 +50,7 @@ const Apply = () => {
         <title>Express Admission | Apply</title>
       </Helmet>
       <Navbar></Navbar>
-      <h1 className="heading">Apply For Your College</h1>
+      <h1 className="heading ">Apply For Your College</h1>
       <div>
         <div className="flex justify-center items-center p-5 md:px-10">
           <form

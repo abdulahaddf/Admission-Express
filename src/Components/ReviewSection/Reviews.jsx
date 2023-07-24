@@ -13,7 +13,7 @@ const Reviews = ({ rev }) => {
 //   console.log(rating);
 
   return (
-    <div>
+    <div data-aos="zoom-in-up">
       
 
           <div className="flex gap-10  rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">

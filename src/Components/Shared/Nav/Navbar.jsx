@@ -58,13 +58,13 @@ const Navbar = () => {
                 <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
               </svg></label>
   </div> 
-  <div className="drawer-side">
+  <div className="drawer-side ">
     <label htmlFor="my-drawer" className="drawer-overlay"></label>
-    <ul className="menu p-4 h-1/3 w-1/2    ">
+    <ul className="menu p-4 h-1/3 w-full    ">
       {/* Sidebar content here */}
       <div
           
-              className="  text-black bg-white rounded-lg glass text-xl font-semibold p-10 mt-10 text-left  " 
+              className="  text-black bg-white rounded-lg glass text-xl font-semibold p-10 mt-10 text-center hover:text-green " 
               >
               <div> 
                 <NavLink
@@ -194,14 +194,14 @@ const Navbar = () => {
                   data-tip={user?.displayName}
                 >
                   <img
-                    className="rounded-full border-2 border-blue "
+                    className="rounded-full border-2 border-green "
                     referrerPolicy="no-referrer"
                     src={user?.photoURL}
                     alt="user"
                   />
                 </div>
 
-                <button onClick={logOut} className="btn-custom-sm mr-5">
+                <button onClick={logOut} className="btn-custom mr-5">
                   Log Out
                 </button>
               </div>
@@ -242,6 +242,7 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
+          
         </div>
       </div>
     </div>

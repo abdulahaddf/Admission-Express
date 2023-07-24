@@ -10,7 +10,7 @@ const CollegeSection = () => {
   }, []);
   return (
     <div>
-      <h1 className="heading my-10">Featured Colleges</h1>
+      <h1 className="heading  my-10">Featured Colleges</h1>
 
       <div className="grid md:grid-cols-2 gap-5 w-11/12 mx-auto">
         {Colleges.slice(0, 4).map((clg) => (

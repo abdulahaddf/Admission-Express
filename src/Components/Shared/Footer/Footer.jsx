@@ -14,18 +14,18 @@ const Footer = () => {
       </strong>
 
       <form className="mt-6">
-        <div className="relative flex gap-2 max-w-lg">
+        <div className="relative md:flex gap-2">
           <label className="sr-only" htmlFor="email"> Email </label>
 
           <input
-            className="w-full rounded-full border-green border-2 bg-gray-100 p-4 pe-32 text-sm font-semibold"
+            className="w-full rounded-full border-green border-2 bg-gray-100  p-2 md:p-4  "
             id="email"
             type="email"
             placeholder="yourmail@gmail.com"
           />
 
           <button
-            className=" top-1/2 btn-custom"
+            className=" top-1/2 mt-2 md:mt-0 btn-custom"
           >
             Subscribe
           </button>
@@ -33,7 +33,7 @@ const Footer = () => {
       </form>
     </div>
 
-    <div className="mt-16 w-11/12 text-center mx-auto">
+    <div className="md:mt-16 w-11/12 text-center mx-auto">
       <div className="mx-auto max-w-sm lg:max-w-none">
         
 
@@ -41,12 +41,12 @@ const Footer = () => {
       </div>
 
       <div
-        className="flex justify-evenly"
+        className="md:flex justify-evenly"
       >
         <div>
-          <strong className="font-semibold text-gray-900"> Services </strong>
+          <strong className="font-semibold text-gray-900 text-xl py-4"> Services </strong>
 
-          <ul className="mt-6 space-y-1">
+          <ul className="md:mt-6 space-y-1">
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75"
@@ -93,13 +93,13 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <strong className="font-semibold text-gray-900"> About </strong>
+        <div className="my-4">
+          <strong className="font-semibold text-gray-900 text-xl "> About </strong>
 
-          <ul className="mt-6 space-y-1">
+          <ul className="md:mt-6 space-y-1 px-3">
             <li>
               <a
-                className="text-gray-700 transition hover:text-gray-700/75"
+                className="text-gray-700 transition hover:text-gray-700/75 "
                 href="/"
               >
                 About
@@ -136,9 +136,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <strong className="font-semibold text-gray-900"> Support </strong>
+          <strong className="font-semibold text-gray-900 text-xl"> Support </strong>
 
-          <ul className="mt-6 space-y-1">
+          <ul className="md:mt-6 space-y-1">
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75"

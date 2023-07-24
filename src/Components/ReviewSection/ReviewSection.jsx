@@ -11,7 +11,7 @@ const ReviewSection = () => {
   console.log(data);
   return (
     <div>
-      <h1 className="heading">Latest Reviews</h1>
+      <h1 className="heading ">Latest Reviews</h1>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
         {data?.slice(0, 5).map((rev) => (
           <Reviews key={rev._id} rev={rev}></Reviews>

@@ -16,7 +16,7 @@ const Admission = () => {
         <title>Express Admission | Admission</title>
       </Helmet>
       <Navbar></Navbar>
-      <h1 className="heading">Get Admitted</h1>
+      <h1 className="heading ">Get Admitted</h1>
       <div className="md:w-11/12 mx-auto">
         <div className="overflow-x-auto">
           <table className="table table-zebra shadow-xl w-full text-center">
@@ -41,7 +41,7 @@ const Admission = () => {
                       alt="college"
                     />
                   </td>
-                  <td className="text-xl hover:underline">
+                  <td className="text-xl hover:underline hover:text-green">
                     <Link to="/apply" state={clg}>
                       {clg.name}
                     </Link>

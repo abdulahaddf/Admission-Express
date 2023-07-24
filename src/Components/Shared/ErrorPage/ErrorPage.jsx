@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const ErrorPage = () => {
@@ -46,6 +47,9 @@ const ErrorPage = () => {
 
     <p className="mt-4 text-gray-500 text-3xl">We can't find that page.</p>
   </div>
+<div className="flex justify-center my-20">
+  <Link className="btn-custom text-3xl shadow-xl" to="/">Back To Home Page</Link>
+</div>
 </div>
         </div>
     );

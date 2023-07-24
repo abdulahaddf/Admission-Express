@@ -16,7 +16,7 @@ const Colleges = () => {
         <title>Express Admission | Colleges</title>
       </Helmet>
       <Navbar></Navbar>
-      <h1 className="heading my-10">All Colleges</h1>
+      <h1 className="heading  my-10">All Colleges</h1>
 
       <div className="grid md:grid-cols-2 gap-5 w-11/12 mx-auto">
         {Colleges.map((clg) => (

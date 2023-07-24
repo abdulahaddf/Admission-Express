@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ClgCard = ({clg}) => {
+  AOS.init();
     const {
         name,
         imageLink,
@@ -13,7 +16,7 @@ const ClgCard = ({clg}) => {
      
       } = clg;
     return (
-        <div className="">
+        <div data-aos="zoom-in-up" className="">
               <div className="block rounded-lg p-4 m-2 shadow-sm shadow-indigo-100">
       <img
         alt={name}

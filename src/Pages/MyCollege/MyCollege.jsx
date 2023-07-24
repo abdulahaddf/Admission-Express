@@ -30,7 +30,7 @@ const MyCollege = () => {
       {info?.length > 0 && info ? (
         <>
           {" "}
-          <h1 className="heading">All My Applied Colleges</h1>
+          <h1 className="heading ">All My Applied Colleges</h1>
           <div>
             {info?.map((data) => (
               <MyCollegeCard key={data.info._id} data={data}></MyCollegeCard>
@@ -38,7 +38,7 @@ const MyCollege = () => {
           </div>
         </>
       ) : (
-        <p className="heading">You Did not applied in any College</p>
+        <p className="heading ">You Did not applied in any College</p>
       )}
     </div>
   );
