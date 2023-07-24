@@ -30,6 +30,13 @@ const ResetForm = () => {
           const errorCode = error.code;
           const errorMessage = error.message;
           console.log(errorCode,errorMessage);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Check Your Mail ",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         });
       };
 
