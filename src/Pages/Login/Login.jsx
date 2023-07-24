@@ -199,7 +199,9 @@ const Login = () => {
               <span className="error">Password is required</span>
             )}
           </div>
-            
+              <Link to="/forget" className="text-xs text-green hover:underline" >
+              Forget Password?
+              </Link>
          
           <div className="mt-6">
             <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue rounded-md hover:bg-green focus:outline-none focus:bg-green">
