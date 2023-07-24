@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/apply",
-        element: <Apply></Apply>,
+        element: <PrivateRoute><Apply></Apply></PrivateRoute>,
       },
     ],
   },

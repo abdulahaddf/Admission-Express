@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import Navbar from "../../Components/Shared/Nav/Navbar";
 import { AuthContext } from "../../provider/AuthProvider";
 import MyCollegeCard from "./MyCollegeCard";
+import { Helmet } from "react-helmet";
 
 
 const MyCollege = () => {
@@ -20,6 +21,9 @@ const MyCollege = () => {
     console.log(info);
     return (
         <div>
+             <Helmet>
+        <title>Express Admission | My College</title>
+      </Helmet>
             <Navbar></Navbar>
            {
             info?.length > 0 && info ? <> <h1 className="heading">All My Applied Colleges</h1>

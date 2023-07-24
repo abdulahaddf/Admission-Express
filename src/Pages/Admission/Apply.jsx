@@ -4,6 +4,7 @@ import Navbar from "../../Components/Shared/Nav/Navbar";
 import { useForm, Controller } from 'react-hook-form';
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const Apply = () => {
@@ -48,6 +49,9 @@ const { handleSubmit, control, reset } = useForm();
 
     return (
         <div>
+           <Helmet>
+        <title>Express Admission | Apply</title>
+      </Helmet>
             <Navbar></Navbar>
             <h1 className="heading">Apply For Your College</h1>
             <div>

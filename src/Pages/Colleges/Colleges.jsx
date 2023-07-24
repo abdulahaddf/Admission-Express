@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../Components/Shared/Nav/Navbar";
 import ClgCard from "./ClgCard";
+import { Helmet } from "react-helmet";
 
 
 const Colleges = () => {
@@ -12,6 +13,9 @@ const Colleges = () => {
     }, []);
     return (
         <div>
+           <Helmet>
+        <title>Express Admission | Colleges</title>
+      </Helmet>
             <Navbar></Navbar>
             <h1 className="heading my-10">All Colleges</h1>
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../Components/Shared/Nav/Navbar";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Admission = () => {
   const [Colleges, setCollege] = useState([]);
@@ -11,6 +12,9 @@ const Admission = () => {
   }, []);
   return (
     <div>
+       <Helmet>
+        <title>Express Admission | Admission</title>
+      </Helmet>
       <Navbar></Navbar>
       <h1 className="heading">Get Admitted</h1>
       <div className="md:w-11/12 mx-auto">
@@ -37,7 +41,7 @@ const Admission = () => {
                       alt="college"
                     />
                   </td>
-                  <td><Link to= "/apply"  state= { clg } >{clg.name}</Link></td>
+                  <td className="text-xl hover:underline"><Link to= "/apply"  state= { clg } >{clg.name}</Link></td>
                   <td>{clg.admissionDates}</td>
                   <td>
                     {" "} 
