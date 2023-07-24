@@ -9,21 +9,10 @@ import Swal from "sweetalert2";
 const Apply = () => {
     const location = useLocation();
 // // console.log(props)
-// // console.log(location.state)
+
     const  clg  = location.state;
     console.log(clg);
-//     const {
-//         name,
-//         imageLink,
-//         admissionDates,
-//         events,
-//         researchHistory,
-//         sports,
-//         admissionProcess,
-//         eventsDetails,
-//         researchWorks,
-//         sportsCategories
-//       } = clg;
+
 
 const {user} = useContext(AuthContext);
 const { handleSubmit, control, reset } = useForm();
@@ -80,6 +69,7 @@ const { handleSubmit, control, reset } = useForm();
                 defaultValue={user.name}
                 placeholder="Enter candidate name"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -99,6 +89,7 @@ const { handleSubmit, control, reset } = useForm();
                 id="subject"
                 placeholder="Enter subject"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -110,15 +101,17 @@ const { handleSubmit, control, reset } = useForm();
           <Controller
             name="email"
             control={control}
-            defaultValue=""
+            defaultValue={user.email}
             render={({ field }) => (
               <input
                 {...field}
                 type="email"
                 id="email"
                 value={user.email}
+                defaultValue={user.email}
                 placeholder="Enter candidate email"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -138,6 +131,7 @@ const { handleSubmit, control, reset } = useForm();
                 id="phone"
                 placeholder="Enter candidate phone number"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -157,6 +151,7 @@ const { handleSubmit, control, reset } = useForm();
                 id="address"
                 placeholder="Enter address"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -176,6 +171,7 @@ const { handleSubmit, control, reset } = useForm();
                 id="dob"
                 placeholder="Enter date of birth"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+                required
               />
             )}
           />
@@ -195,6 +191,7 @@ const { handleSubmit, control, reset } = useForm();
                 id="image"
                 placeholder="Enter a URL of your image"
                 className="w-full px-3 py-2 rounded-md border border-blue focus:outline-none focus:border-blue-500"
+               
               />
             )}
           />

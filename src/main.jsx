@@ -14,6 +14,8 @@ import MyCollege from "./Pages/MyCollege/MyCollege";
 import ErrorPage from "./Components/Shared/ErrorPage/ErrorPage";
 import Apply from "./Pages/Admission/Apply";
 import SingleCollege from "./Pages/Colleges/SingleCollege";
+import PrivateRoute from "./routes/PrivateRoute";
+import '@smastrom/react-rating/style.css'
 
 
 const router = createBrowserRouter([
@@ -48,7 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/my-college",
-        element: <MyCollege></MyCollege>,
+        element:<PrivateRoute><MyCollege></MyCollege> </PrivateRoute>
       },
       {
         path: "/apply",

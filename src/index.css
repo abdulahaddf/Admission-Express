@@ -19,4 +19,5 @@
   .heading {
     @apply w-fit mx-auto text-3xl text-center border-b-4 border-t-2 my-10 py-2 border-green rounded-xl px-5;
   }
+ 
 }

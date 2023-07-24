@@ -7,24 +7,27 @@ import MyCollegeCard from "./MyCollegeCard";
 
 const MyCollege = () => {
     const {user} = useContext(AuthContext);
-    // console.log(user.email);
+    console.log(user.email);
     const [info, setInfo] = useState();
     useEffect(() => {
-        fetch(`http://localhost:5000/colleges?emeil=${user.email}`)
-        .then(res => res.json())
-        .then(data => setInfo(data))
-    },[info])
+        if (user?.email) { // Check if user.email is available before making the API call
+          fetch(`http://localhost:5000/myinfo/${user.email}`)
+            .then(res => res.json())
+            .then(data => setInfo(data))
+            .catch(error => console.error(error));
+        }
+      }, [user?.email]);
     console.log(info);
     return (
         <div>
             <Navbar></Navbar>
            {
-            info.length > 0 && info ? <> <h1 className="heading">All My Applied Colleges</h1>
+            info?.length > 0 && info ? <> <h1 className="heading">All My Applied Colleges</h1>
             <div>
                 {
                     info?.map(data => <MyCollegeCard key={data.info._id} data={data}></MyCollegeCard>)
                 }
-            </div></> : <p>You Did not applied in any College</p>
+            </div></> : <p className="heading">You Did not applied in any College</p>
            }
         </div>
     );

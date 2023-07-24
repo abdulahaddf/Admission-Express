@@ -2,6 +2,7 @@ import Banner from "../../Components/Banner/Banner";
 import CollegeSection from "../../Components/Banner/CollegeSection/CollegeSection";
 import PhotoGallery from "../../Components/PhotoGallery/PhotoGallery";
 import Research from "../../Components/Research/Research";
+import ReviewSection from "../../Components/ReviewSection/ReviewSection";
 import Footer from "../../Components/Shared/Footer/Footer";
 
 
@@ -24,6 +25,7 @@ const Home = () => {
 <CollegeSection></CollegeSection>
     <PhotoGallery></PhotoGallery>
     <Research></Research>
+    <ReviewSection></ReviewSection>
    <Footer></Footer>
     </div>
   );

@@ -1,10 +1,14 @@
 /* eslint-disable react/prop-types */
 
+import { Rating } from "@smastrom/react-rating";
+import { Controller, useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+
 
 
 
 const MyCollegeCard = ({ data }) => {
-    console.log(data);
+    // console.log(data);
     const {
       name,
       imageLink,
@@ -17,14 +21,61 @@ const MyCollegeCard = ({ data }) => {
      
     } = data.clg;
   
-    const { subject, email, phone, address, dob, } = data.info;
+    const { subject, email, phone, address, dob,image } = data.info;
+// console.log(data.info);
+
+    const {
+        register,
+        handleSubmit,
+        control,
+        reset,
+        formState: { errors },
+      } = useForm({
+        mode: 'onBlur',
+        defaultValues: {
+          review: '',
+          rating: 0,
+        },
+      });
+      
+      function onSubmit(rating) {
+        const review = {
+            rating: rating,
+            image: image,
+            college : name,
+            name: data?.info?.name || "Unknown",
+          };
+console.log(review);
+fetch("http://localhost:5000/review", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(review),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          console.log(result);
+          if (result.acknowledged) {
+            reset()
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Review added successfully",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          }
+        });
+       
+      }
+
+
   
     return (
       <div className="w-4/5 mx-auto">
         <div className="block rounded-lg p-4 m-2 shadow-sm shadow-indigo-100">
           <img alt={name} src={imageLink} className="w-full rounded-md object-cover" />
   
-          <div className="mt-2 flex justify-evenly">
+          <div className="mt-2 flex justify-around">
           <div>
             <dl>
               <div>
@@ -60,7 +111,7 @@ const MyCollegeCard = ({ data }) => {
 
 
 
-            <div className="mt-6 flex items-center gap-8">
+           
               <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
                 <div className="mt-1.5 sm:mt-0">
                   <p className="text-gray-500">Research History</p>
@@ -68,13 +119,13 @@ const MyCollegeCard = ({ data }) => {
                 </div>
               </div>
   
-              <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+              <div className=" sm:shrink-0 sm:items-center sm:gap-2">
                 <div className="mt-1.5 sm:mt-0">
                   <p className="text-gray-500">Sports</p>
                   <p className="font-medium">{sports}</p>
                 </div>
               </div>
-            </div>
+          
   </div>
             {/* Display data.info properties */}
             <div>
@@ -113,6 +164,54 @@ const MyCollegeCard = ({ data }) => {
               <p className="font-medium">{dob}</p>
             </div>
            </div>
+
+           </div>
+           <div>
+
+{/* rating Form */}
+
+<div className="w-96 p-10">
+
+
+           <form  onSubmit={handleSubmit(onSubmit)}>
+            <p>Your Review</p>
+      <label className="flex" htmlFor="review">
+        
+        <textarea className="textarea border-green w-64" type="text" id="review" {...register('review', { required: true })} />
+      </label>
+      {errors.review && <div>Review is required.</div>}
+
+      <div>
+        <div id="rating_label">Rating</div>
+        <Controller
+          control={control}
+          name="rating"
+          rules={{
+            validate: (rating) => rating > 0,
+          }}
+          render={({ field: { onChange, onBlur, value } }) => (
+            <Rating
+              value={value}
+              isRequired
+              onChange={onChange}
+              visibleLabelId="rating_label"
+              onBlur={onBlur}
+            />
+          )}
+        />
+        {errors.rating && <div>Rating is required.</div>}
+      </div>
+
+      <button className="btn-custom" type="submit">
+        Submit review
+      </button>
+    </form>
+    </div>
+
+
+
+
+
 
            </div>
           </div>
