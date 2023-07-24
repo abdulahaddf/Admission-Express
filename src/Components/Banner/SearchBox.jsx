@@ -1,7 +1,16 @@
 /* eslint-disable react/no-unknown-property */
 
+import { useEffect, useState } from "react";
+
 
 const SearchBox = () => {
+  const [Colleges, setCollege] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://express-server-production-3274.up.railway.app/colleges"
+    ).then((res) => res.json().then((data) => setCollege(data)));
+  }, []);
+  
     return (
         <div className="w-1/2 py-10 mx-auto z-40">
            <form>

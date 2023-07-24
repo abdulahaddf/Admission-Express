@@ -40,7 +40,7 @@ const Navbar = () => {
     }}>
 
   
-    <div className="flex items-center w-full shadow-md text-center bg-white bg-opacity-40 ">
+    <div className="flex items-center w-full shadow-md text-center bg-white bg-opacity-80 ">
       <div className="navbar ">
         <div className="navbar-start ">
 

@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div>
       <Navbar fluid rounded 
-       className="bg-transparent z-40">
+       className="bg-transparent  z-40">
         <Link className="flex justify-center items-center" to="/">
           <img
             className="h-12"

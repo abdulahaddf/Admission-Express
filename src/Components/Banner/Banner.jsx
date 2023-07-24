@@ -5,7 +5,7 @@ import SearchBox from "./SearchBox";
 
 const Banner = () => {
     return (
-        <div className="z-10 max-h-[92vh] bg-black bg-opacity-40 ">
+        <div className="z-10 max-h-[92vh] bg-white bg-opacity-0 ">
           <SearchBox></SearchBox>
             
 
