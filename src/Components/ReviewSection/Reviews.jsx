@@ -31,7 +31,7 @@ const Reviews = ({ rev }) => {
             <div className="space-y-2">
               <p className="text-lg"> {college}</p>
               <p className="text-sm text-gray-500 flex items-center ">Ratings: {rating} <AiFillStar></AiFillStar></p>
-              <p className="text-sm text-gray-500">{review}</p>
+              <p className="text-md">{review}</p>
             
               <dd className="text-xs text-gray-500">{formattedDate}</dd>
             </div>
