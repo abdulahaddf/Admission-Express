@@ -14,7 +14,7 @@ const CollegeSection = () => {
         
             <h1 className="heading my-10">Featured Colleges</h1>
 
-            <div className="grid grid-cols-2 gap-5 w-11/12 mx-auto">
+            <div className="grid md:grid-cols-2 gap-5 w-11/12 mx-auto">
 
             {
                 Colleges.slice(0,4).map(clg => <ClgCard  key={clg.name} clg={clg}> </ClgCard>)

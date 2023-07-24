@@ -13,7 +13,7 @@ const Admission = () => {
     <div>
       <Navbar></Navbar>
       <h1 className="heading">Get Admitted</h1>
-      <div className="w-11/12 mx-auto">
+      <div className="md:w-11/12 mx-auto">
         <div className="overflow-x-auto">
           <table className="table table-zebra shadow-xl w-full text-center">
             {/* head */}

@@ -21,8 +21,8 @@ const MyCollegeCard = ({ data }) => {
      
     } = data.clg;
   
-    const { subject, email, phone, address, dob,image } = data.info;
-// console.log(data.info);
+    const { subject, email, phone, address, dob, image } = data.info;
+// console.log(data.info); 
 
     const {
         register,
@@ -71,11 +71,11 @@ fetch("http://localhost:5000/review", {
 
   
     return (
-      <div className="w-4/5 mx-auto">
+      <div className="md:w-4/5 mx-auto">
         <div className="block rounded-lg p-4 m-2 shadow-sm shadow-indigo-100">
           <img alt={name} src={imageLink} className="w-full rounded-md object-cover" />
   
-          <div className="mt-2 flex justify-around">
+          <div className="mt-2 md:flex justify-around">
           <div>
             <dl>
               <div>
@@ -132,7 +132,7 @@ fetch("http://localhost:5000/review", {
 
           
             <p className="text-center text-lg">Applicant Details</p>
-            <div className="flex gap-32 ">
+            <div className="md:flex gap-32 ">
 
            
          <div className="space-y-2">
@@ -177,7 +177,7 @@ fetch("http://localhost:5000/review", {
             <p>Your Review</p>
       <label className="flex" htmlFor="review">
         
-        <textarea className="textarea border-green w-64" type="text" id="review" {...register('review', { required: true })} />
+        <textarea className="textarea border-green md:w-64" type="text" id="review" {...register('review', { required: true })} />
       </label>
       {errors.review && <div>Review is required.</div>}
 

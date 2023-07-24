@@ -4,8 +4,8 @@ const Footer = () => {
     return (
       
 
-<footer className="bg-white">
-  <div className="mx-auto w-11/12 ">
+<footer className="bg-white mt-10 glass" >
+  <div className="mx-auto w-11/12 md:flex">
     <div className="mx-auto max-w-md p-10">
       <strong
         className="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
@@ -169,8 +169,8 @@ const Footer = () => {
         </div>
       </div>
     </div>
-
-    <div className="mt-16 border-t border-gray-100 pt-8">
+    </div>
+    <div className=" border-t border-gray-100 p-2">
     <div className="mt-6 flex justify-center gap-4">
           <a
             className="text-gray-700 transition hover:text-gray-700/75"
@@ -283,7 +283,7 @@ const Footer = () => {
       <p className="text-center text-xs/relaxed text-gray-500">
         ©ExpressAdmission 2023. All rights reserved. </p>
     </div>
-  </div>
+ 
 </footer>
     );
 };

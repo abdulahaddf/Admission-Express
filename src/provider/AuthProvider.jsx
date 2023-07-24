@@ -8,6 +8,8 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   updateProfile,
+  FacebookAuthProvider,
+  sendPasswordResetEmail
 } from "firebase/auth";
 
 import { app } from "../firebase/firebase.config";
@@ -31,6 +33,7 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
+
   //logout
   const logOut = () => {
     setLoading(true);
@@ -47,6 +50,16 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
+
+//LOGIN WITH FB
+const fbProvider = new FacebookAuthProvider();
+const signInFB = () => {
+  setLoading(true);
+  return signInWithPopup(auth, fbProvider);
+};
+
+
+
 
   const profileUpdate = (profile) => {
     return updateProfile(auth.currentUser, profile);
@@ -65,6 +78,7 @@ const AuthProvider = ({ children }) => {
   // console.log(auth, user);
   const authInfo = {
     user,
+    auth,
     createUser,
     signIn,
     logOut,
@@ -72,6 +86,8 @@ const AuthProvider = ({ children }) => {
     loading,
     setLoading,
     profileUpdate,
+    signInFB,
+    sendPasswordResetEmail
   };
 
   return (

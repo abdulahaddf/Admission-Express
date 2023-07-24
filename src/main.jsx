@@ -16,6 +16,7 @@ import Apply from "./Pages/Admission/Apply";
 import SingleCollege from "./Pages/Colleges/SingleCollege";
 import PrivateRoute from "./routes/PrivateRoute";
 import '@smastrom/react-rating/style.css'
+import ResetForm from "./Pages/Login/ResetForm";
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/forget",
+        element: <ResetForm></ResetForm>,
       },
       {
         path: "/colleges",

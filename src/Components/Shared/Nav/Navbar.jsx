@@ -64,7 +64,7 @@ const Navbar = () => {
       {/* Sidebar content here */}
       <div
           
-              className="  text-black mt-2 text-xl font-semibold py-4 text-left  " 
+              className="  text-black bg-white rounded-lg glass text-xl font-semibold p-10 mt-10 text-left  " 
               >
               <div> 
                 <NavLink
