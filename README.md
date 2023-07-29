@@ -39,5 +39,27 @@ Optimize app performance for faster loading and smooth user experience.
 ## Feedback and Support
 Provide a feedback mechanism for users to share their thoughts and suggestions.
 Offer customer support to address user inquiries and issues.
-Technologies Used
+## Frontend Technologies:
+React
+React DOM
+React Rating (@smastrom/react-rating)
+AOS (Animations On Scroll) library
+Firebase (for authentication)
+LocalForage (for client-side storage)
+Match Sorter library
+React Headroom
+React Helmet
+React Helmet Async
+React Hook Form
+React Icons
+React Router DOM
+React Spinners
+Sort By library
+SweetAlert2 library
+Swiper library
+## Backend Technologies:
+CORS (Cross-Origin Resource Sharing)
+dotenv (for managing environment variables)
+Express.js (Web application framework for Node.js)
+MongoDB (Database management system)
 
