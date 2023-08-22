@@ -6,7 +6,6 @@ const SingleCollege = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   const location = useLocation();
   const clg = location.state;
   console.log(clg);
