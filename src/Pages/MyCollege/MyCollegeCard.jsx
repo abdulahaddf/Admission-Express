@@ -100,7 +100,6 @@ const MyCollegeCard = ({ data }) => {
                 </div>
               ))}
             </div>
-
             <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
               <div className="mt-1.5 sm:mt-0">
                 <p className="text-gray-500">Research History</p>
