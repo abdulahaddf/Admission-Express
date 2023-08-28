@@ -22,7 +22,7 @@ const SearchBox = () => {
   );
 
   return (
-    <div className="w-11/12 md:w-1/2 py-5 md:py-10 mx-auto z-40">
+    <div className="w-11/12 md:w-1/2 py-5 md:py-10 mx-auto z-40 relative">
       <form>
         <label
           htmlFor="default-search"
@@ -48,7 +48,11 @@ const SearchBox = () => {
 
       {/* Display filtered colleges only when there is a search value */}
       {searchValue && (
-        <ul className="flex-col  bg-white p-5 space-y-3">
+       <ul
+       className={`absolute w-full bg-white border-2 border-green rounded-md max-h-60 overflow-y-auto p-2 mt-2 ${
+         searchValue ? 'block' : 'hidden'
+       }`}
+     >
           {filteredColleges.map((clg) => (
             <li key={clg.id}>
               <Link  to="/details"  state= { clg } className="flex justify-between hover:underline hover:text-green">{clg.name}  <FaArrowAltCircleRight /></Link>
